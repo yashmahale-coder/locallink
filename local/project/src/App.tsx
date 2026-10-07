@@ -57,7 +57,7 @@ function AuthPage() {
 
     try {
       if (mode === 'login') {
-        const response = await fetch('http://localhost:8080/api/users/login', {
+        const response = await fetch('https://locallink-api-production.up.railway.app/api/users/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function AuthPage() {
 
         navigate('/dashboard');
       } else {
-        const response = await fetch('http://localhost:8080/api/users/register', {
+        const response = await fetch('https://locallink-api-production.up.railway.app/api/users/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
