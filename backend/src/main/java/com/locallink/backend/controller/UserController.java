@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://locallink19.netlify.app"
+})
 @RestController
 public class UserController {
 
